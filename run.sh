@@ -10,6 +10,10 @@ echo "========================================================================"
 echo " Starting Customer Support RAG AI Security Demonstration Environment"
 echo " OWASP LLM06 (Excessive Agency) & LLM04 (Unbounded Consumption)"
 echo "========================================================================"
+# Activate virtual environment if present and not already active
+if [ -d "venv" ] && [ -z "$VIRTUAL_ENV" ]; then
+    source venv/bin/activate
+fi
 
 # Check Python version
 python3 --version
